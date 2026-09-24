@@ -12,27 +12,6 @@ npm run dev
 
 Then open http://localhost:3000.
 
-## What changed from the single-page version
-
-- **TypeScript**, matching a fresh `npx create-next-app@latest` project
-  (strict mode, `@/*` import alias, no `src/` directory).
-- **Tailwind v4**, using its CSS-first config — there's no
-  `tailwind.config.js`. The theme (colors, fonts, the marquee keyframe)
-  is defined directly in `app/globals.css` via `@theme`. See
-  `postcss.config.mjs` for the one-line plugin setup v4 needs.
-- **Local placeholder art instead of remote images.** Product, hero, and
-  lookbook imagery is generated as SVG files under `public/images/` by
-  `scripts/generate-placeholders.py` — no external host, so nothing to
-  misconfigure or go down. Swap in real photography by pointing the
-  `image` field in `content/products.ts` / `content/lookbook.ts` at your
-  own files; you don't need the script once you have real photos, but
-  it's there if you add products and want art before you have shots
-  (`npm run generate:placeholders`).
-- **Real routing.** `/`, `/shop`, `/shop/[slug]`, `/lookbook`, `/about`,
-  `/contact` — see the structure below.
-- **Animation**, described in its own section below.
-- **Content files** under `content/`, described below.
-
 ## Structure
 
 ```
@@ -126,19 +105,3 @@ shouldn't need to touch component code for everyday changes:
 - **`content/testimonials.ts`** — customer quotes.
 - **`content/why-us.ts`** — the four value-prop cards, referencing
   lucide icon names as strings (mapped to components in `WhyUs.tsx`).
-
-## Notes / things I'd flag
-
-- **No checkout.** The bag is fully interactive (add, remove, adjust
-  quantity, live subtotal) but the checkout button is intentionally
-  disabled — wiring up real payments is a much bigger scope decision.
-- **No ESLint config.** I left it out to keep the dependency list
-  smaller for a prototype; happy to add `eslint-config-next` back if
-  you want it.
-- **Shop filtering resets on refresh** since it's local state, not a
-  URL param — trivial to switch to `useSearchParams` if you want
-  filtered links to be shareable.
-- **lucide-react dropped brand/logo icons** (Instagram, TikTok, etc.)
-  a while back, so social links in the footer/contact page are plain
-  text rather than icon buttons — using inexact substitute icons
-  seemed worse than just not using an icon there.
