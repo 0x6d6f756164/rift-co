@@ -7,6 +7,8 @@ import Footer from "@/components/Footer";
 import BagDrawer from "@/components/BagDrawer";
 import { business } from "@/content/site";
 
+import { Analytics } from "@vercel/analytics/next"
+
 const anton = Anton({
   subsets: ["latin"],
   weight: "400",
@@ -36,6 +38,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <BagDrawer />
         </Providers>
       </body>
+      <Analytics/>
     </html>
   );
 }

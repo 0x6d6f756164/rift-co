@@ -16,8 +16,8 @@ export const business = {
 export const contact = {
   email: "hello@riftco.example",
   supportEmail: "support@riftco.example",
-  phone: "+1 (555) 019-4477",
-  address: "412 Freight St, Unit 3, Portland, OR",
+  phone: "+1 234567890",
+  address: "Mock Street, Mock Resident, Mock Country",
 };
 
 export const socials = [
