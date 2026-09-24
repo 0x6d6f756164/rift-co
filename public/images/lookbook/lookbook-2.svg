@@ -1,0 +1,21 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="diag-57062" width="14" height="14" patternTransform="rotate(45)" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="14" stroke="#F4F2ED" stroke-opacity="0.04" stroke-width="6" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="1500" fill="#0A0A0A" />
+  <rect width="1200" height="1500" fill="url(#diag-57062)" />
+  <circle cx="748.8" cy="421.1" r="454.5" fill="#E23A24" opacity="0.14" /><circle cx="748.8" cy="421.1" r="454.5" fill="none" stroke="#E23A24" stroke-width="2" opacity="0.7" />
+  <path d="M -29.7 616.2 A 453.3 453.3 0 0 1 761.0 644.3" fill="none" stroke="#E23A24" stroke-width="1.0" opacity="0.55" />
+<circle cx="205.3" cy="1515.1" r="247.0" fill="none" stroke="#E23A24" stroke-width="2.3" opacity="0.55" />
+<line x1="989.0" y1="925.2" x2="1610.0" y2="1066.5" stroke="#E23A24" stroke-width="1.4" opacity="0.55" />
+<circle cx="890.7" cy="500.5" r="297.0" fill="none" stroke="#E23A24" stroke-width="1.7" opacity="0.55" />
+<line x1="10.0" y1="749.0" x2="-379.4" y2="1208.2" stroke="#E23A24" stroke-width="1.1" opacity="0.55" />
+  <path d="M 480.5 1201.3 A 562.3 562.3 0 0 1 -155.9 382.3" fill="none" stroke="#ECE8DF" stroke-width="1.3" opacity="0.18" />
+<path d="M 780.5 1264.7 A 434.3 434.3 0 0 1 369.0 851.4" fill="none" stroke="#ECE8DF" stroke-width="1.2" opacity="0.18" />
+<path d="M 1171.6 224.4 A 484.7 484.7 0 0 1 1092.5 913.7" fill="none" stroke="#ECE8DF" stroke-width="1.6" opacity="0.18" />
+<circle cx="713.1" cy="496.7" r="362.4" fill="none" stroke="#ECE8DF" stroke-width="1.2" opacity="0.18" />
+<circle cx="1093.6" cy="1467.7" r="210.3" fill="none" stroke="#ECE8DF" stroke-width="2.4" opacity="0.18" />
+  
+</svg>
