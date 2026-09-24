@@ -21,8 +21,8 @@ export const contact = {
 };
 
 export const socials = [
-  { label: "Instagram", href: "https://instagram.com/riftco" },
-  { label: "TikTok", href: "https://tiktok.com/@riftco" },
+  { label: "Instagram", href: "https://instagram.com/" },
+  { label: "TikTok", href: "https://tiktok.com/" },
 ];
 
 // Primary navigation, shared by the navbar and mobile menu.
