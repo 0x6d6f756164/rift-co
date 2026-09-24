@@ -25,7 +25,7 @@ export default function RouteTransition() {
         transition={{ duration: 0.5, times: [0, 0.5, 1] }}
         className="absolute inset-0 flex items-center justify-center font-display text-2xl tracking-tight text-paper"
       >
-        STRAY CO.
+        RIFT CO.
       </motion.span>
     </div>
   );
