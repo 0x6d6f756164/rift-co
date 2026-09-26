@@ -165,6 +165,8 @@ def main() -> None:
             os.path.join(OUT, "lookbook", f"lookbook-{i}.svg"),
             base_svg(f"lookbook-{i}", 1200, 1500),
         )
+        
+    write(os.path.join(ROOT, "app", "icon.svg"), base_svg("brand-icon", 64, 64))
 
 
 if __name__ == "__main__":

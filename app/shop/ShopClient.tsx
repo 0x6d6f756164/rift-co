@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import ProductGrid from "@/components/ProductGrid";
@@ -18,6 +18,12 @@ export default function ShopClient() {
     isCategory(initialCategory) ? initialCategory : "All"
   );
 
+  // Footer links carry ?category=X — re-sync if the user clicks one
+  // again while already on /shop (searchParams alone won't remount us).
+  useEffect(() => {
+    const fromUrl = searchParams.get("category");
+    setActive(isCategory(fromUrl) ? fromUrl : "All");
+  }, [searchParams]);
   const products = useMemo(
     () => getProductsByCategory(active === "All" ? undefined : active),
     [active]
