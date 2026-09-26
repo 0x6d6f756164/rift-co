@@ -62,6 +62,7 @@ export default function Hero() {
         </div>
 
         {/* Image panel with a subtle scroll parallax */}
+        {/* Image panel with a subtle scroll parallax */}
         <div ref={imageWrapRef} className="relative min-h-[360px] overflow-hidden md:col-span-5 md:min-h-0">
           <motion.div style={{ y: imageY }} className="absolute inset-0 -top-[10%] h-[120%]">
             <Image
@@ -73,6 +74,36 @@ export default function Hero() {
               priority
             />
           </motion.div>
+
+          {/* Ground shadow — shrinks/fades as hoodie rises, grows/darkens as it lands */}
+
+{/* Shadow — same transition object, reused by reference so both are byte-identical */}
+<motion.div
+  initial={{ scaleX: 1, scaleY: 1, opacity: 1 }}
+  animate={{ scaleX: [1, 0.55, 1], scaleY: [1, 0.7, 1], opacity: [1, 0.5, 1] }}
+  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+  className="absolute bottom-[6%] left-1/2 h-12 w-[55%] -translate-x-1/2 rounded-[50%] bg-black blur-md"
+  aria-hidden
+/>
+
+<motion.div
+  initial={{ y: 0 }}
+  animate={{ y: [0, -14, 0] }}
+  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+  className="absolute inset-0"
+>
+  {/* Product */}
+  <Image
+    src="/images/hero/hero-outfit.png"
+    alt="Rift Co. Outfit"
+    fill
+    sizes="(min-width: 768px) 42vw, 100vw"
+    className="object-contain object-bottom p-4"
+    priority
+  />
+</motion.div>
+
+
         </div>
       </div>
 

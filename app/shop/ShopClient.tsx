@@ -30,8 +30,7 @@ export default function ShopClient() {
       <Reveal className="mb-10 md:mb-14">
         <h1 className="font-display text-5xl leading-none md:text-6xl">The full collection</h1>
         <p className="mt-4 max-w-md text-sm text-ink/60">
-          Everything currently in production, filtered by category — pulled straight from the
-          catalog in content/products.ts.
+          Discover the entirety of our catalogue & find what suits your taste the best!
         </p>
       </Reveal>
 
