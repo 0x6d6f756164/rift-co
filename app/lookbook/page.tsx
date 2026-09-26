@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Lookbook from "@/components/Lookbook";
 
 export const metadata: Metadata = {
-  title: "Lookbook — Stray Co.",
+  title: "Lookbook — Rift Co.",
 };
 
 export default function LookbookPage() {

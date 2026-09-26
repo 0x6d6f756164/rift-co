@@ -44,7 +44,7 @@ export default function Footer() {
       </div>
 
       <div className="container-edge flex flex-col gap-2 border-t border-paper/10 py-6 text-xs text-paper/45 sm:flex-row sm:items-center sm:justify-between">
-        <p>© {new Date().getFullYear()} {business.name}.</p>
+        <p>© {new Date().getFullYear()} {business.name}. All rights reserved.</p>
         <p>Prototype build — not a live store.</p>
       </div>
     </footer>

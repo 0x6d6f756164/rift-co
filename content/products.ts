@@ -108,8 +108,6 @@ export function getFeaturedProducts(): Product[] {
 
 export function getProductsByCategory(category?: string): Product[] {
   if (!category) return products;
-  console.log("filtering for:", JSON.stringify(category));
-  console.log("available categories:", [...new Set(products.map(p => p.category))]);
   return products.filter((p) => p.category === category);
 }
 

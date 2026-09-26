@@ -7,7 +7,7 @@ const items = [
 ];
 
 export default function Ticker() {
-  const doubled = [...items, ...items, ...items];
+  const doubled = [...items, ...items];
 
   return (
     <div className="overflow-hidden border-b border-ink/10 bg-ink py-3">

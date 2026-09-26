@@ -66,7 +66,7 @@ export default function Hero() {
           <motion.div style={{ y: imageY }} className="absolute inset-0 -top-[10%] h-[120%]">
             <Image
               src="/images/hero/hero-portrait.svg"
-              alt="Abstract placeholder artwork standing in for a Stray Co. campaign photo"
+              alt="Abstract placeholder artwork standing in for a Rift Co. campaign photo"
               fill
               sizes="(min-width: 768px) 42vw, 100vw"
               className="object-cover"

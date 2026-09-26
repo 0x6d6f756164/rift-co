@@ -4,7 +4,7 @@ import Reveal, { RevealGroup, RevealItem } from "@/components/Reveal";
 
 const icons: Record<string, LucideIcon> = { ShieldCheck, Recycle, Truck, RotateCcw };
 
-export default function WhyUs({ heading = "Why people stay with Stray" }: { heading?: string }) {
+export default function WhyUs({ heading = "Why people choose Rift" }: { heading?: string }) {
   return (
     <section id="why" className="border-b border-ink/10 bg-paper">
       <div className="container-edge py-16 md:py-24">

@@ -5,7 +5,7 @@ import { business, contact, socials } from "@/content/site";
 import ContactForm from "@/components/ContactForm";
 
 export const metadata: Metadata = {
-  title: "Contact — Stray Co.",
+  title: "Contact — Rift Co.",
 };
 
 export default function ContactPage() {

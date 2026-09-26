@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const product = getProductBySlug(slug);
   if (!product) return {};
   return {
-    title: `${product.name} — Stray Co.`,
+    title: `${product.name} — Rift Co.`,
     description: product.description,
   };
 }

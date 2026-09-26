@@ -16,8 +16,8 @@ export const business = {
 export const contact = {
   email: "hello@riftco.example",
   supportEmail: "support@riftco.example",
-  phone: "+1 234567890",
-  address: "Mock Street, Mock Resident, Mock Country",
+  phone: "+1 (123) 456-7890",
+  address: "Mock St, Unit 3, City, Country",
 };
 
 export const socials = [
@@ -33,23 +33,24 @@ export const primaryNav = [
   { label: "Contact", href: "/contact" },
 ];
 
-// Footer link columns.
+// Footer link columns. The /shop?category=... links are read by
+// app/shop/ShopClient.tsx on mount to pre-select that filter.
 export const footerNav = [
   {
     heading: "Shop",
     links: [
-      { label: "Outerwear", href: "/shop" },
-      { label: "Tops", href: "/shop" },
-      { label: "Bottoms", href: "/shop" },
-      { label: "Accessories", href: "/shop" },
+      { label: "Outerwear", href: "/shop?category=Outerwear" },
+      { label: "Tops", href: "/shop?category=Tops" },
+      { label: "Bottoms", href: "/shop?category=Bottoms" },
+      { label: "Accessories", href: "/shop?category=Accessories" },
     ],
   },
   {
     heading: "Support",
     links: [
       { label: "Contact", href: "/contact" },
-      { label: "Shipping & returns", href: "/contact" },
-      { label: "Size guide", href: "/contact" },
+      { label: "Shipping & returns", href: "/support#shipping" },
+      { label: "Size guide", href: "/support#size-guide" },
     ],
   },
   {
@@ -72,4 +73,13 @@ export const palette = {
   bone: "#ECE8DF",
   blood: "#E23A24",
   steel: "#8C8880",
+};
+
+// Timing tokens shared by the route transition and scroll reveals, so
+// you can tune animation speed globally from one place.
+export const motionConfig = {
+  routeTransitionDuration: 0.45, // seconds, the full-screen wipe on nav
+  routeTransitionDelay: 0.04,
+  revealDuration: 0.5,
+  revealStagger: 0.06,
 };

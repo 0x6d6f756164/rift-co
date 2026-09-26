@@ -8,11 +8,14 @@ export default function ProductGrid({
   heading,
   viewAllHref,
   viewAllLabel = "View all",
+  immediate = false,
 }: {
   products: Product[];
   heading?: string;
   viewAllHref?: string;
   viewAllLabel?: string;
+  /** Pass true for content that's already on screen when it mounts (e.g. a re-filtered grid). */
+  immediate?: boolean;
 }) {
   return (
     <div>
@@ -30,7 +33,7 @@ export default function ProductGrid({
         </Reveal>
       )}
 
-      <RevealGroup className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
+      <RevealGroup immediate={immediate} className="grid gap-x-6 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
         {products.map((product) => (
           <RevealItem key={product.id}>
             <ProductCard product={product} />

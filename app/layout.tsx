@@ -7,8 +7,6 @@ import Footer from "@/components/Footer";
 import BagDrawer from "@/components/BagDrawer";
 import { business } from "@/content/site";
 
-import { Analytics } from "@vercel/analytics/next"
-
 const anton = Anton({
   subsets: ["latin"],
   weight: "400",
@@ -29,7 +27,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${anton.variable} ${inter.variable}`} data-scroll-behavior="smooth">
+    <html lang="en" className={`${anton.variable} ${inter.variable}`}>
       <body>
         <Providers>
           <Navbar />
@@ -38,7 +36,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <BagDrawer />
         </Providers>
       </body>
-      <Analytics/>
     </html>
   );
 }

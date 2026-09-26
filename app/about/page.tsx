@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import { business } from "@/content/site";
 
 export const metadata: Metadata = {
-  title: "About — Stray Co.",
+  title: "About — Rift Co.",
 };
 
 export default function AboutPage() {
