@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BagDrawer from "@/components/BagDrawer";
 import { business } from "@/content/site";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const anton = Anton({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${anton.variable} ${inter.variable}`}>
       <body>
+        <ScrollToTop />
         <Providers>
           <Navbar />
           {children}
